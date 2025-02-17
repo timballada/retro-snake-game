@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= locals.user.username %>'s account</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+      <h1>Account</h1>
+    <div>
+      <p><b>Username:</b> <%= locals.user.username %></p>
+      <p><b>User ID:</b> <%= locals.user.id %></p>
+      <p><b>High Score:</b> <%= locals.user.highscore %></p>
+    </div>
+    <h2>Change Password</h2>
+      <% if (locals.resetError){%>
+        <p class="error"> <b>Error: </b>Current password incorrect</p>
+      <% }%>
+      <% if (locals.resetSuccess){%>
+        <p> <b>Password successfully changed!</b></p>
+      <% }%>
+    <form action="/account" method="POST">
+      <!-- <label for="username">Username</label> -->
+      <!-- <input id="username" name="username" placeholder="username" type="text" /> -->
+
+      <label for="currentpw">Current Password</label>
+      <input id="currentpw" name="currentpw" type="password" required/>
+      <br><br>
+      <label for="newpw">New Password</label>
+      <input id="newpw" name="newpw" type="password" required/>
+      <br><br>
+      <button><a>Reset</a></button>
+    </form>
+    <br><br>
+    <button class="home"><a href="/home">Back to Home</a></button>
+    <br><br>
+</body>
+</html>

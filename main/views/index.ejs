@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Login</title>
+</head>
+<body>
+    <h1>Snake Game Database</h1>
+    <form action="/log-in" method="POST">
+      <label for="username">Username</label>
+      <input id="username" name="username" type="text" required/>
+    <br><br>
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" required/>
+    <br><br>
+      <button><a>Login</a></button>
+    </form>
+    <% if (locals.loginError){%>
+      <p class="error"><b>Error: </b>Incorrect Username or Password<p>
+    <% }%>
+    <h3>Don't have an account?</h3>
+    <button><a href="/sign-up">Sign Up</a></button>
+</body>
+</html>
+

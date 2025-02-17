@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" , content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="/styles.css">
+      <title><%= locals.user.username %>'s Snake Game</title>
+  </head>
+  <body>
+    <h1>Snake</h1>
+    <h2>High Score: <b id="hs"><%= locals.user.highscore %></b></h2>
+    <form id="save" action="" method="POST">
+      <input id="new" name="new" type="hidden" readonly>
+    </form>
+    <canvas id="board"></canvas>
+    <script src="snake.js"></script>
+    <br><br>
+    <button class="home"><a href="/home">Back to Home</a></button>
+  </body>
+</html>

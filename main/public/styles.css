@@ -1,0 +1,50 @@
+body {
+  text-align: center;
+  background: black;
+  color: green;
+  font-size: 20px;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  color: green;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+  color: red;
+  cursor: pointer;
+}
+#board {
+  border: 3px solid green;
+}
+button {
+  background: black;
+  border: 2px solid green;
+  border-radius: 4px;
+  color: green;
+  font-size: 20px;
+}
+input {
+  background: black;
+  border: 1px solid green;
+  border-radius: 4px;
+  color: green;
+}
+input:focus {
+  outline: none;
+  border: 2px solid green;
+}
+/* .error { */
+/*   color: red; */
+/* } */
+/* .account { */
+/*   position: fixed; */
+/*   top: 10px; */
+/*   right: 10px; */
+/* } */
+/* .logout { */
+/*   position: fixed; */
+/*   top: 10px; */
+/*   left: 10px; */
+/* } */
