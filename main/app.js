@@ -12,7 +12,7 @@ const pool = new Pool({
   host: "localhost", // or wherever the db is hosted
   user: "timballada",
   database: "game_users",
-  password: "************",
+  password: "password",
   port: 5432,
 });
 
