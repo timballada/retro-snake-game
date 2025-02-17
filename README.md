@@ -60,8 +60,6 @@ To run the project locally, ensure you have Node.js and PostgreSQL installed. Th
 4. Start the server with `node app.js` (or use a process manager like nodemon for development).
 5. Open your browser and navigate to `http://localhost:3000` to access the application.
 
-This project not only brings back the fun of the classic Snake game but also showcases how to build a secure, full-stack web application using modern JavaScript technologies. Enjoy playing and exploring the code!
-
 
 
 ---
