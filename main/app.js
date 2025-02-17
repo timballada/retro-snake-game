@@ -27,9 +27,8 @@ passport.use(
   new LocalStrategy(async (username, password, done) => {
     try {
       const { rows } = await pool.query(
-        // "SELECT * FROM users WHERE username = $1", //SECURE VERSION
-        // [username],
-        "SELECT * FROM users WHERE username = '" + username + "'", //INSECURE VERSION
+        "SELECT * FROM users WHERE username = $1",
+        [username],
       );
       const user = rows[0];
 
