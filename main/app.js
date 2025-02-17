@@ -8,8 +8,7 @@ const bcrypt = require("bcryptjs");
 const LocalStrategy = require("passport-local").Strategy;
 
 const pool = new Pool({
-  // add your configuration
-  host: "localhost", // or wherever the db is hosted
+  host: "localhost",
   user: "timballada",
   database: "game_users",
   password: "password",
@@ -72,7 +71,6 @@ app.get("/", (req, res) => {
 });
 app.get("/sign-up", (req, res) => res.render("sign-up-form"));
 app.post("/sign-up", async (req, res, next) => {
-  // const hashedPassword = await bcrypt.hash(req.body.password, 10);
   await bcrypt.hash(req.body.password, 10, function (err, hashedPassword) {
     try {
       pool.query("INSERT INTO users (username, password) VALUES ($1, $2)", [
