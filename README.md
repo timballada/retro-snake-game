@@ -2,7 +2,7 @@
 I am utilizing this ongoing project to Implement all phases of the web application life-cycle, with the eventual goal being deployment on a dedicated server. As of right now it is still in the Development/Testing phase.
 
 
-[Short Video Walkthrough](https://www.youtube.com/watch?v=N2sVcP5Xacc)
+
 
 
 ---
