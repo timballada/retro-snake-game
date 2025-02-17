@@ -1,4 +1,4 @@
-# Web App for Playing Retro Snake Game
+# Web App for Playing Arcade Style Snake Game
 I am utilizing this ongoing project to implement all phases of the web application life-cycle, with the eventual goal being deployment on a dedicated server. As of right now it is still in the Development/Testing phase.
 
 
