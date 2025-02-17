@@ -20,8 +20,8 @@ This project is a web-based implementation of the classic Snake game with user a
 
 - **User Registration and Login**: New users can sign up, and existing users can log in. Authentication is managed through Passport.js, with passwords securely hashed using bcrypt.
 
-|Login|Homepage|
-|:-:|:-:|
+|||
+|---|---|
 |![image](https://github.com/user-attachments/assets/c397db52-9d5c-47c5-819a-8f3c92a6fa24)|![image](https://github.com/user-attachments/assets/a6fe3db7-a439-4038-b7e0-9bfa731956ad)|
 
 - **Session Management**: User sessions are maintained using express-session, ensuring a smooth and secure login experience.
