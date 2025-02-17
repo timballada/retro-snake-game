@@ -19,10 +19,16 @@ This project is a web-based implementation of the classic Snake game with user a
 ## Project Features
 
 - **User Registration and Login**: New users can sign up, and existing users can log in. Authentication is managed through Passport.js, with passwords securely hashed using bcrypt.
+
+|Login|Homepage|
 |:-:|:-:|
-| ![image](https://github.com/user-attachments/assets/c397db52-9d5c-47c5-819a-8f3c92a6fa24) | ![image](https://github.com/user-attachments/assets/a6fe3db7-a439-4038-b7e0-9bfa731956ad) |
+|![image](https://github.com/user-attachments/assets/c397db52-9d5c-47c5-819a-8f3c92a6fa24)|![image](https://github.com/user-attachments/assets/a6fe3db7-a439-4038-b7e0-9bfa731956ad)|
+
 - **Session Management**: User sessions are maintained using express-session, ensuring a smooth and secure login experience.
 - **Account Management**: Users can update their passwords, with the system verifying the current password before allowing changes.
+
+![image](https://github.com/user-attachments/assets/3b1f5c0f-5969-47e7-9f59-03e03c536beb)
+
 - **High Score Tracking**: The application records high scores for the Snake game, updating the database when a user achieves a new high score.
 - **Game Interface**: The Snake game itself is rendered on a dedicated route, providing an interactive gaming experience directly within the web application.
 
@@ -58,11 +64,5 @@ This project not only brings back the fun of the classic Snake game but also sho
 
 
 
-
----
-![image](https://github.com/user-attachments/assets/d4dcfdeb-643c-426a-803f-f7dcfc813a60)
----
-
-![image](https://github.com/user-attachments/assets/3b1f5c0f-5969-47e7-9f59-03e03c536beb)
 ---
 
