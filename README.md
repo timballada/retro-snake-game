@@ -1,5 +1,5 @@
 # Web Application for Playing The Snake Game
-I am utilizing this ongoing project to Implement all phases of the web application life-cycle, with the eventual goal being deployment on a dedicated server. As of right now it is still in the Development/Testing phase.
+I am utilizing this ongoing project to implement all phases of the web application life-cycle, with the eventual goal being deployment on a dedicated server. As of right now it is still in the Development/Testing phase.
 
 
 
