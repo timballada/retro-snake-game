@@ -11,7 +11,9 @@ This project is a web-based implementation of the classic Snake game with user a
 - **Express.js**: A minimal and flexible Node.js web application framework that handles routing, middleware, and HTTP requests.
 - **EJS (Embedded JavaScript Templates)**: The templating engine used for dynamically rendering HTML views.
 - **PostgreSQL**: The relational database system used to store user data and game scores. The [pg](https://node-postgres.com/) library is used for database interactions.
+
 ![image](https://github.com/user-attachments/assets/f58ae348-d77f-4f65-96ff-8d2c61586057)
+
 - **Passport.js**: A popular authentication middleware for Node.js, utilized here with the Local Strategy to handle username and password-based authentication.
 - **bcryptjs**: A library for hashing and comparing passwords to ensure secure storage and verification of user credentials.
 - **express-session**: Middleware used to manage user sessions, maintaining authentication state across HTTP requests.
