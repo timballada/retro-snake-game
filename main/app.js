@@ -5,7 +5,19 @@ const express = require("express");
 const session = require("express-session");
 const passport = require("passport");
 const bcrypt = require("bcryptjs");
+const chalk = require("chalk");
 const LocalStrategy = require("passport-local").Strategy;
+
+// Logs current line to console for debugging purposes
+function getCurrentLine() {
+  const err = new Error();
+  const stackLines = err.stack.split("\n");
+  // The stack trace format differs between browsers and Node.js.
+  // This example works for many V8 environments (Chrome, Node.js)
+  const callerLine = stackLines[2]; // Adjust based on the environment
+  const lineMatch = callerLine.match(/:(\d+):\d+\)?$/);
+  return lineMatch ? lineMatch[1] : "unknown";
+}
 
 const pool = new Pool({
   host: "localhost",
@@ -42,6 +54,8 @@ passport.use(
         console.log("incorrect password");
         return done(null, false, { message: "Incorrect password" });
       }
+      console.log(chalk.blue(`[Line ${getCurrentLine()}]`));
+      console.log(user); // user object
       return done(null, user);
     } catch (err) {
       return done(err);
@@ -49,6 +63,8 @@ passport.use(
   }),
 );
 passport.serializeUser((user, done) => {
+  // console.log(chalk.blue(`[Line ${getCurrentLine()}]`));
+  // console.log(user.id);
   done(null, user.id);
 });
 
@@ -123,6 +139,8 @@ app.get("/log-in", (req, res) => {
   res.render("index", { user: req.user, loginError: true });
 });
 app.get("/home", (req, res) => {
+  // console.log(chalk.blue(`[Line ${getCurrentLine()}]`)); // user object
+  // console.log(req.user); // user object
   res.render("home", { user: req.user });
 });
 app.get("/snake", (req, res) => {
