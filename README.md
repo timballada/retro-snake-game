@@ -2,7 +2,7 @@
 
 This project is a web-based implementation of the classic Snake game with user authentication and high score tracking. It combines nostalgic gameplay with modern web development technologies and serves as an excellent demonstration of integrating game logic into a full-stack application.
 
-[YouTube Video: Walkthrough](https://www.youtube.com/watch?v=KDV-rMnv0Y0)
+[YouTube Video: Walkthrough](https://www.youtube.com/watch?v=u_MavYR8sjg)
 ---
 ![image](https://github.com/user-attachments/assets/5916ca52-612e-4a3b-bb6d-515a8c263d21)
 
