@@ -2,9 +2,9 @@
 
 This project is a web-based implementation of the classic Snake game with user authentication and high score tracking. It combines nostalgic gameplay with modern web development technologies and serves as an excellent demonstration of integrating game logic into a full-stack application.
 
-[YouTube Video: Walkthrough](https://www.youtube.com/watch?v=u_MavYR8sjg)
----
-![image](https://github.com/user-attachments/assets/5916ca52-612e-4a3b-bb6d-515a8c263d21)
+## [YouTube Video: Walkthrough](https://www.youtube.com/watch?v=u_MavYR8sjg)
+
+![image](https://github.com/user-attachments/assets/34550e56-49ea-4102-adaa-b4413c078f10)
 
 ## Key Technologies and Software
 
@@ -23,9 +23,9 @@ This project is a web-based implementation of the classic Snake game with user a
 
 - **User Registration and Login**: New users can sign up, and existing users can log in. Authentication is managed through Passport.js, with passwords securely hashed using bcrypt.
 
-|||
-|---|---|
-|![image](https://github.com/user-attachments/assets/c397db52-9d5c-47c5-819a-8f3c92a6fa24)|![image](https://github.com/user-attachments/assets/a6fe3db7-a439-4038-b7e0-9bfa731956ad)|
+|                                                                                           |                                                                                           |
+| ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| ![image](https://github.com/user-attachments/assets/c397db52-9d5c-47c5-819a-8f3c92a6fa24) | ![image](https://github.com/user-attachments/assets/a6fe3db7-a439-4038-b7e0-9bfa731956ad) |
 
 - **Session Management**: User sessions are maintained using express-session, ensuring a smooth and secure login experience.
 - **Account Management**: Users can update their passwords, with the system verifying the current password before allowing changes.
@@ -37,22 +37,20 @@ This project is a web-based implementation of the classic Snake game with user a
 
 ## How It Works
 
-1. **Routing and Views**:  
-   - The server is set up with various routes for home, sign-up, login, account management, and the Snake game.  
+1. **Routing and Views**:
+
+   - The server is set up with various routes for home, sign-up, login, account management, and the Snake game.
    - EJS templates render dynamic HTML pages, passing in user data and status messages (e.g., login errors, password reset notifications).
 
-2. **Authentication Flow**:  
-   - Users register by providing a username and password, which is then hashed and stored in a PostgreSQL database.  
+2. **Authentication Flow**:
+
+   - Users register by providing a username and password, which is then hashed and stored in a PostgreSQL database.
    - Upon login, Passport's Local Strategy verifies credentials by comparing the provided password with the hashed version stored in the database.
    - Successful authentication leads to session creation, and users can access protected routes like the game interface and account management pages.
 
-3. **Database Interactions**:  
+3. **Database Interactions**:
    - The application connects to a PostgreSQL database using the `pg` module and manages data (users and high scores) through SQL queries.
-   
-4. **Game Integration**:  
+4. **Game Integration**:
    - The Snake game is accessible via its own route (`/snake`), where gameplay occurs and high scores are submitted back to the server for updating the user's record in the database.
 
-
-
 ---
-
