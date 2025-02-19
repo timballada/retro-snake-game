@@ -48,20 +48,9 @@ This project is a web-based implementation of the classic Snake game with user a
 
 3. **Database Interactions**:  
    - The application connects to a PostgreSQL database using the `pg` module and manages data (users and high scores) through SQL queries.
-   - Note: While the code includes a commented-out secure query (using parameterized queries), an insecure version (concatenating user input) is currently active for username lookup. **This should be replaced with the secure version to prevent SQL injection vulnerabilities.**
-
+   
 4. **Game Integration**:  
    - The Snake game is accessible via its own route (`/snake`), where gameplay occurs and high scores are submitted back to the server for updating the user's record in the database.
-
-## Running the Project
-
-To run the project locally, ensure you have Node.js and PostgreSQL installed. Then:
-
-1. Clone the repository.
-2. Install the dependencies using `npm install`.
-3. Set up your PostgreSQL database and update the connection settings in `app.js` if needed.
-4. Start the server with `node app.js` (or use a process manager like nodemon for development).
-5. Open your browser and navigate to `http://localhost:3000` to access the application.
 
 
 
