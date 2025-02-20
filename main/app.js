@@ -19,11 +19,18 @@ function getCurrentLine() {
   return lineMatch ? lineMatch[1] : "unknown";
 }
 
+const PORT = process.env.PORT || 3000;
+const HOST = process.env.PG_HOST;
+const USER = process.env.PG_USER;
+const DB = process.env.PG_DB;
+const PW = process.env.PG_PASSWORD;
+const SECRET = process.env.SECRET;
+
 const pool = new Pool({
-  host: "localhost",
-  user: "timballada",
-  database: "game_users",
-  password: "password",
+  host: HOST,
+  user: USER,
+  database: DB,
+  password: PW,
   port: 5432,
 });
 
@@ -32,7 +39,7 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
 app.use(express.static(assetsPath));
-app.use(session({ secret: "cats", resave: false, saveUninitialized: false }));
+app.use(session({ secret: SECRET, resave: false, saveUninitialized: false }));
 app.use(passport.session());
 app.use(express.urlencoded({ extended: false }));
 passport.use(
@@ -166,4 +173,4 @@ app.get("/log-out", (req, res, next) => {
   });
 });
 
-app.listen(3000, () => console.log("app listening on port 3000!"));
+app.listen(PORT, () => console.log(`app listening on port ${PORT}`));
