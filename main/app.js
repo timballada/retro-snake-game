@@ -173,4 +173,6 @@ app.get("/log-out", (req, res, next) => {
   });
 });
 
-app.listen(PORT, () => console.log(`app listening on port ${PORT}`));
+app.listen(PORT, "127.0.0.1", () =>
+  console.log(`app listening on port ${PORT}`),
+);
